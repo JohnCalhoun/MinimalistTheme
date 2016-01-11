@@ -1,0 +1,59 @@
+@import 'colors';
+@import 'fonts';
+
+//grobal styles----------------------------------------------------------------
+body {
+	background: $white; 
+	font: 20px Hoefler Text, bodyfont, serif;
+	color: $white;
+	line-height: 30px;
+	margin-bottom: 0px;
+}
+	
+h1 {font-family: $title-font; font-size: 30pt; color:$black; font-weight:normal;}
+h2 {font-family: $title-font; font-size: 25pt; color:$black; line-height:26px; font-weight:normal;}
+h3 {font-family: $title-font; font-size: 24pt; color:$black; line-height: 15px; text-indent: 0px;}
+h4 {font-family: $title-font; font-size: 23pt; color:$black;}
+h5 {font-family: $title-font; font-size: 21pt; color:$black;}
+h6 {font-family: $title-font; font-size: 18pt; color:$black;}
+
+img{border:none;}
+img a{border:none;}
+blockquote{border-left:1px solid $black; margin:0px; padding:0 12px 0 12px;}
+
+p{line-height: 30px; margin:30px auto; text-indent: 0px;}
+
+a {color: $grey;text-decoration: none;}
+a:link {color: $grey; text-decoration: none;}
+a:visited {color: $grey; text-decoration: none;}
+a:hover {color: $primary-color; text-decoration: none;}
+
+ul{padding: 0em 0em 0em 0em;}
+li {line-height: 30px; padding: 6px 0 0 0; font-family: $title-font; font-size: 12pt;}
+ol{padding: 0em 0em 0em 0em;}
+
+
+//section styles-------------------------------------------------------------------
+#content em { color: $primary-color }
+
+#resume-nav a:link {display: inline; color: $grey; text-decoration: none;}
+#resume-nav a:visited {color: $grey; text-decoration: none;}
+#resume-nav a:hover {color: $primary-color; text-decoration: none;}
+
+#content {min-width: 20em; max-width: 30em; overflow: hidden; margin-top:0px; margin-left:64px; margin-right:14px; margin-bottom:0px;}
+#content p{font-family: $body-font; }	
+
+#footer {margin-left:115px}
+#footer {background:$white; clear: both;}
+#footer p{padding:4px 0;margin: 0; color: $primary-color; font-size:18px; font-family: $title-font; letter-spacing:4px}
+
+//wordpress entries-------------------------------------------------------------------------------
+.entry strong{font-family: $title-font; font-weight: bold; color: $primary-color;}
+
+#arc {float: right; width:530px; overflow: hidden; margin-top:0px; margin-left:14px; margin-right:14px; margin-bottom:24px;}	
+.arc p{color:$white; font-family:  $title-font;  font-size: 12px; font-weight: normal !important;}
+.year th{color:$white; font-family:  $title-font;  font-size: 22px; font-weight: bold;}
+.arctitle {color:$white; font-family: $title-font;  font-size: 12px; font-weight: normal;}
+.arctitle th {color:$white; font-family:  $title-font;  font-size: 14px; font-weight: normal;}
+.arc2 {color:$white; font-family:  $title-font;  font-size: 12px; font-weight: normal !important;}
+.arc2 th {color:$white; font-family:  $title-font; font-size: 12px; font-weight: normal !important;}
