@@ -14,7 +14,7 @@ Template Name: allposts
 		<div class="post" id="post-<?php the_ID(); ?>">
 
  
-			<h2><a href="/">JMC</a> : <b>archives</b></h2>
+			<h2><a href="<?php echo get_home_url(); ?>"><?php blogingo('name');?></a> : <b>archives</b></h2>
 
 			<div class="entry">
 

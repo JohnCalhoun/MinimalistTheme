@@ -1,4 +1,4 @@
-.PHONY: clear style asset html staging
+.PHONY: clear style asset php staging
 
 clear: 
 	rm -r ./staging/*
