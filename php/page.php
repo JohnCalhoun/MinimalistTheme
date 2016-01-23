@@ -3,7 +3,7 @@
 	<div id="content">
 
 		<div class="post" id="post-<?php the_ID(); ?>">
-			<?php include "header_nav.php"; ?>
+			<?php get_template_part('header_nav'); ?>
 			<div class="entry">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

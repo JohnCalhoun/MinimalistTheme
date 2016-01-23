@@ -2,7 +2,7 @@
 </div><!--row close -->
 
 <div class="row">
-<?php include "footer_nav.php";?>
+<?php get_template_part('footer_nav');?>
 </div>
 
 </div>
