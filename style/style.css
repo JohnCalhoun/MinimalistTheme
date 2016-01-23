@@ -1,4 +1,17 @@
 @charset "UTF-8";
+/*
+Theme name: mmn
+Theme URI: 
+Author: John Calhoun
+Author URI: johnmcalhoun.com
+Description: A minimalist theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: mmn
+
+*/
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5809,19 +5822,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-/*
-Theme name: mmn
-Theme URI: 
-Author: John Calhoun
-Author URI: johnmcalhoun.com
-Description: A minimalist theme.
-Version: 1.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: 
-Text Domain: mmn
-
-*/
 .alignnone {
   margin: 5px 20px 20px 0; }
 
@@ -5912,6 +5912,15 @@ a img.aligncenter {
   width: auto;
   z-index: 100000;
   /* Above WP toolbar. */ }
+
+.gallery-caption {
+  /*empty for now*/ }
+
+.sticky {
+  /*empty for now*/ }
+
+.bypostauthor {
+  /*empty for now*/ }
 
 @font-face {
   font-family: 'altGothic3';

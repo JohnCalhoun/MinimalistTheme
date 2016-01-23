@@ -18,6 +18,9 @@ upload:staging
 	./upload.sh
 test:staging
 	./upload_dev.sh
+package:staging
+	zip -r mnn.zip staging
+
 push:
 	git push -u origin master
 commit:
