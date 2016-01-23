@@ -5,25 +5,26 @@
 	<div class="col-md-8">
 <?php if (have_posts()) : ?>
 
+
 		<?php while (have_posts()) : the_post(); ?>
-
 			<div class="post" id="post-<?php the_ID(); ?>">
-
 				<?php include "header_nav.php"; ?>
 				<div class="entry">
 					<?php the_content('Read more &raquo;'); ?>
 				</div>
-
 			</div>
 		<?php endwhile; ?>
+		<div class="nav-previous alignleft"><?php previous_posts_link( 'Newer posts' ); ?></div>
+		<div class="nav-next alignright"><?php next_posts_link( 'Older posts' ); ?></div>
 
 
-	<?php else : ?>
+
+<?php else : ?>
 
 		<h2 class="center">Not Found</h2>
 		<p class="center">Sorry, but you are looking for something that isn't here.</p>
 
-	<?php endif; ?>
+<?php endif; ?>
 
 
 	</div>
