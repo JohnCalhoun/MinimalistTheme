@@ -1,16 +1,15 @@
 <?php get_header(); ?>
 
 	<div id="content">
-
+	<div class="row">
+	<div class="col-md-8">
 <?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
 
 			<div class="post" id="post-<?php the_ID(); ?>">
 
-
-				<h2><a href="/">JMC</a><b style="color:#33ffd6">:</b><a style="#999999" href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><b><?php the_title(); ?></b></a></h2>
-
+				<?php include "header_nav.php"; ?>
 				<div class="entry">
 					<?php the_content('Read more &raquo;'); ?>
 				</div>
@@ -27,9 +26,10 @@
 	<?php endif; ?>
 
 
-
+	</div>
+	<div class="col-md-4 hidden-xs hidden-sm">
 <table>
-<tr><th><br /><br /><h1><b>all posts</b></h1></th></tr>
+<tr><th><br /><br /><h4><b>POSTS</b></h4></th></tr>
 
 	
 
@@ -70,9 +70,8 @@ if ($arcresults) {
 }
 ?>
 </table>
-
-
-	<h1><b><a href="http://mnmlist.com/feeds/">subscribe</a></b></h1>
+</div>
+</div>
 </div>
 
 <?php get_footer(); ?>

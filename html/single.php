@@ -4,8 +4,7 @@
 
 		<div class="post" id="post-<?php the_ID(); ?>">
 
-			<h2><a href="/">mnmlist</a>: <b><?php the_title(); ?></b></h2>
-
+			<?php include "header_nav.php"; ?>
 			<div class="entry">
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

@@ -3,9 +3,7 @@
 	<div id="content">
 
 		<div class="post" id="post-<?php the_ID(); ?>">
-			<h2><a href="/" >JMC</a><b style="color: #10B897"> :</b> <b style="color: #999999"><?php the_title(); ?></b></h2>
-			<hr />
-
+			<?php include "header_nav.php"; ?>
 			<div class="entry">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

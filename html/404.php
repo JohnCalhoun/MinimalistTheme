@@ -7,7 +7,7 @@
 <br>
 our search is lonely<br>
 a footprint left in pure snow<br>
-blown into <a href="<?php echo get_option('home'); ?>/">nothing</a>
+blown into <a href="<?php echo home_url(); ?>/">nothing</a>
 	</div>
 
 <?php get_footer(); ?>

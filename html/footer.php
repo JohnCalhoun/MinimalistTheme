@@ -1,11 +1,14 @@
-<div id="footer">
-	<p>
-	<a href="/Resume">RESUME</a> :: <a href="/Performance">PERFORMANCE</a> :: <a href="/Blog">BLOG</a> :: <a href="/Contact">CONTACT</a></p>
+</div><!--cold-md-8 col-md-offset-8 close -->
+</div><!--row close -->
+
+<div class="row">
+<?php include "footer_nav.php";?>
+</div>
+
 </div>
 </div>
-</div>
-</div>
-</div>
+</div><!--container-fluid close -->
+</div><!--id close -->
 <?php wp_footer(); ?>
 
 </body>

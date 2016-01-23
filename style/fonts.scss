@@ -1,6 +1,16 @@
-@import 'mixins.scss';
-
-@font-face(AltGothic3,fonts/altgothicfont-webfont);
+@font-face {
+    font-family: 'altGothic3';
+    src: url('fonts/altgothicfont-webfont.eot');
+    src: url('fonts/altgothicfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/altgothicfont-webfont.woff2') format('woff2'),
+         url('fonts/altgothicfont-webfont.woff') format('woff'),
+         url('fonts/altgothicfont-webfont.ttf') format('truetype'),
+         url('fonts/altgothicfont-webfont.svg#alternategotno3dotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 $title-font:'altGothic3', Helvetica, sans-serif; 
 $body-font: Garamond, Georgia, "Times New Roman";
+
+

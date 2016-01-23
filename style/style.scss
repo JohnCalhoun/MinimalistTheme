@@ -5,7 +5,7 @@
 body {
 	background: $white; 
 	font: 20px Hoefler Text, bodyfont, serif;
-	color: $white;
+	color: $black;
 	line-height: 30px;
 	margin-bottom: 0px;
 }
@@ -34,18 +34,18 @@ ol{padding: 0em 0em 0em 0em;}
 
 
 //section styles-------------------------------------------------------------------
-#content em { color: $primary-color }
 
 #resume-nav a:link {display: inline; color: $grey; text-decoration: none;}
 #resume-nav a:visited {color: $grey; text-decoration: none;}
 #resume-nav a:hover {color: $primary-color; text-decoration: none;}
 
-#content {min-width: 20em; max-width: 30em; overflow: hidden; margin-top:0px; margin-left:64px; margin-right:14px; margin-bottom:0px;}
+#content {min-width: 20em; max-width: 30em; overflow: hidden; margin-top:0px; margin-left:64px; margin-right:14px; margin-bottom:0px; max-width: none;}
 #content p{font-family: $body-font; }	
+#content em { color: $primary-color;}
 
 #footer {margin-left:115px}
 #footer {background:$white; clear: both;}
-#footer p{padding:4px 0;margin: 0; color: $primary-color; font-size:18px; font-family: $title-font; letter-spacing:4px}
+.navlist p{padding:4px 0;margin: 0; color: $primary-color; font-size:18px; font-family: $title-font; letter-spacing:4px}
 
 //wordpress entries-------------------------------------------------------------------------------
 .entry strong{font-family: $title-font; font-weight: bold; color: $primary-color;}

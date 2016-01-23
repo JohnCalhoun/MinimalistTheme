@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage mnmlist
+ * @subpackage mmn
  */
 /*
 Template Name: allposts
@@ -14,13 +14,13 @@ Template Name: allposts
 		<div class="post" id="post-<?php the_ID(); ?>">
 
  
-			<h2><a href="/">mnmlist</a> : <b>archives</b></h2>
+			<h2><a href="/">JMC</a> : <b>archives</b></h2>
 
 			<div class="entry">
 
 <script type="text/javascript">
 
-var domainroot="mnmlist.com"
+var domainroot="johnmcalhoun.com"
 
 function Gsitesearch(curobj){
 curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
@@ -33,7 +33,7 @@ curobj.q.value="site:"+domainroot+" "+curobj.qfront.value
 
 <p>search:<br />
 <input name="q" type="hidden" class="texta" />
-<input name="qfront" type="text" class="texta" style="width: 180px; text-size: 12px; height: 12px;" /> </p>
+<input name="qfront" type="text" class="texta" style="width: 180px; text-size: 12px; height: 12px;" /></p>
 
 </form>
 
