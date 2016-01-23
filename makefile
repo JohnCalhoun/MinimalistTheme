@@ -1,4 +1,7 @@
-.PHONY: style asset html staging
+.PHONY: clear style asset html staging
+
+clear: 
+	rm -r ./staging/*
 
 style: ./style/*
 	cd ./style && make style.css && cp style.css ../staging
@@ -6,10 +9,10 @@ style: ./style/*
 asset: ./assets/*
 	cp -r ./assets/* ./staging
 
-html: ./html/*
-	cp -r ./html/* ./staging
+php: ./php/*
+	cp -r ./php/* ./staging
 
-staging:style asset html
+staging:style asset php
 	
 upload:staging
 	./upload.sh
@@ -18,4 +21,4 @@ test:staging
 push:
 	git push -u origin master
 commit:
-	git commit -F commit.txt && > commit.txt
+	git commit -a -F commit.txt && > commit.txt

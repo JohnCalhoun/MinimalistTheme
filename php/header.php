@@ -1,5 +1,5 @@
 <!DOCTYPE HTML> 
-<html lang=en>
+<html <?php language_attributes(); ?>>
 
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" name="viewport" content="<?php bloginfo('html_type'); ?>, charset=<?php bloginfo('charset'); ?>" />
