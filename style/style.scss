@@ -9,13 +9,35 @@ body {
 	line-height: 30px;
 	margin-bottom: 0px;
 }
-	
-h1 {font-family: $title-font; font-size: 30pt; color:$black; font-weight:normal;}
-h2 {font-family: $title-font; font-size: 25pt; color:$black; line-height:26px; font-weight:normal;}
-h3 {font-family: $title-font; font-size: 24pt; color:$black; line-height: 15px; text-indent: 0px;}
-h4 {font-family: $title-font; font-size: 23pt; color:$black;}
-h5 {font-family: $title-font; font-size: 21pt; color:$black;}
-h6 {font-family: $title-font; font-size: 18pt; color:$black;}
+
+@mixin Header($size)  {  
+     font-family: $title-font; 
+     font-size: 30pt; color:$black; 
+     font-weight:normal; 
+     line-height: 1.1; 	
+     font-weight: normal;
+     font-size: $size;
+}
+
+
+h1 {
+     @include Header(30pt);
+     }
+h2 {
+     @include Header(30pt);
+     }
+h3 {
+     @include Header(24pt);
+     }
+h4 {
+     @include Header(23pt);
+     }
+h5 {
+     @include Header(21pt);
+     }
+h6 {
+     @include Header(18pt);
+     }
 
 img{border:none;}
 img a{border:none;}
