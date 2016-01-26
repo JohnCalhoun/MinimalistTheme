@@ -3,15 +3,15 @@
 	<div id="content">
 	<div class="row">
 	<div class="col-md-8">
+     <?php get_template_part('header_nav'); ?>
 <?php if (have_posts()) : ?>
-
 
 		<?php while (have_posts()) : the_post(); ?>
 			<div class="post" id="post-<?php the_ID(); ?>">
-				<?php get_template_part('header_nav'); ?>
-				<div class="entry">
+                    <div class="entry">
 					<?php the_content('Read more &raquo;'); ?>
 				</div>
+				<?php the_tags(); ?>
 			</div>
 		<?php endwhile; ?>
 		<div class="nav-previous alignleft"><?php previous_posts_link( 'Newer posts' ); ?></div>
