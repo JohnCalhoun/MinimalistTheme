@@ -17,7 +17,8 @@
 					<small>
                          <button class="button" onclick="$('#Comments').toggle();">Comments</button>
                          <div id="Comments" style="display: none">
-                             <?php comments_template(); ?>		
+                              <?php comment_form(); ?>
+                              <?php comments_template(); ?>		
                          </div>
                         						
 					</small>
