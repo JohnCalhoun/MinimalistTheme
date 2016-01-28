@@ -1,12 +1,8 @@
-</div><!--cold-md-8 col-md-offset-8 close -->
-</div><!--row close -->
+<?php get_template_part('footer_navbgnklrullggtdudethegchgdl
 
-<div class="row">
-<?php get_template_part('footer_nav');?>
-</div>
 
-</div>
-</div>
+</div><!col-md-8 -->
+</div><!--row -->
 </div><!--container-fluid close -->
 </div><!--id close -->
 <?php wp_footer(); ?>

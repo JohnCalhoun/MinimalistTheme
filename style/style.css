@@ -18,6 +18,9 @@ Text Domain: mmn
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5948,7 +5951,7 @@ h1 {
   font-weight: normal;
   line-height: 1.1;
   font-weight: normal;
-  font-size: 30pt; }
+  font-size: 35pt; }
 
 h2 {
   font-family: "altGothic3", Helvetica, sans-serif;
@@ -6059,27 +6062,21 @@ ol {
   margin-right: 14px;
   margin-bottom: 0px;
   max-width: none; }
-
-#content p {
-  font-family: Garamond, Georgia, "Times New Roman"; }
-
-#content em {
-  color: #10B897; }
-
-#footer {
-  margin-left: 115px; }
+  #content p {
+    font-family: Garamond, Georgia, "Times New Roman"; }
+  #content em {
+    color: #10B897; }
 
 #footer {
   background: #fff;
   clear: both; }
-
-.navlist p {
-  padding: 4px 0;
-  margin: 0;
-  color: #10B897;
-  font-size: 18px;
-  font-family: "altGothic3", Helvetica, sans-serif;
-  letter-spacing: 4px; }
+  #footer .navlist p {
+    padding: 4px 0;
+    margin: 0;
+    color: #10B897;
+    font-size: 18px;
+    font-family: "altGothic3", Helvetica, sans-serif;
+    letter-spacing: 4px; }
 
 .entry strong {
   font-family: "altGothic3", Helvetica, sans-serif;
@@ -6144,5 +6141,10 @@ ol {
 .main_menu li + li:before {
   content: " || ";
   color: #10B897; }
+
+code {
+  font-family: "Roboto Mono", Helvetica, sans-serif;
+  color: #FF7F50;
+  background-color: transparent; }
 
 /*# sourceMappingURL=style.css.map */

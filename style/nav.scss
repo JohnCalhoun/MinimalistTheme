@@ -1,0 +1,15 @@
+@import "colors";
+@import "fonts";
+
+.main_menu {
+     
+     li{  
+          display: inline;
+          text-transform: uppercase;
+          font-family: $title-font;
+     }
+     li+li:before{
+          content:" || ";
+          color: $primary-color;
+     } 
+}

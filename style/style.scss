@@ -21,7 +21,7 @@ body {
 
 
 h1 {
-     @include Header(30pt);
+     @include Header(35pt);
      }
 h2 {
      @include Header(30pt);
@@ -39,44 +39,123 @@ h6 {
      @include Header(18pt);
      }
 
-img{border:none;}
-img a{border:none;}
-blockquote{border-left:1px solid $black; margin:0px; padding:0 12px 0 12px;}
+img{ 
+     border:none;
+}
+img a{
+     border:none;
+}
+blockquote{
+     border-left:1px solid $black; 
+     margin:0px; 
+     padding:0 12px 0 12px;
+}
 
-p{line-height: 30px; margin:30px auto; text-indent: 0px;}
+p{
+     line-height: 30px; 
+     margin:30px auto; 
+     text-indent: 0px;
+}
 
-a {color: $grey;text-decoration: none;}
-a:link {color: $grey; text-decoration: none;}
-a:visited {color: $grey; text-decoration: none;}
-a:hover {color: $primary-color; text-decoration: none;}
+a {
+     color: $grey;
+     text-decoration: none;}
+a:link {
+     color: $grey; 
+     text-decoration: none;}
+a:visited {
+     color: $grey; 
+     text-decoration: none;}
+a:hover {
+     color: $primary-color; 
+     text-decoration: none;}
 
-ul{padding: 0em 0em 0em 0em;}
-li {line-height: 30px; padding: 6px 0 0 0; font-family: $title-font; font-size: 12pt;}
-ol{padding: 0em 0em 0em 0em;}
+ul{
+     padding: 0em 0em 0em 0em;
+}
+li { 
+     line-height: 30px; 
+     padding: 6px 0 0 0; 
+     font-family: $title-font; 
+     font-size: 12pt;
+}
+ol{  
+     padding: 0em 0em 0em 0em;
+}
 
 
 //section styles-------------------------------------------------------------------
 #resume-nav {
-     a:link {display: inline; color: $grey; text-decoration: none;}
-     a:visited {color: $grey; text-decoration: none;}
-     a:hover {color: $primary-color; text-decoration: none;}
+     a:link {  
+          display: inline; 
+          color: $grey; 
+          text-decoration: none;
+     }
+     a:visited {
+          color: $grey; 
+          text-decoration: none;
+     }
+     a:hover {
+          color: $primary-color; 
+          text-decoration: none;
+     }
 }
 
-#content {min-width: 20em; max-width: 30em; overflow: hidden; margin-top:0px; margin-left:64px; margin-right:14px; margin-bottom:0px; max-width: none;}
-#content p{font-family: $body-font; }	
-#content em { color: $primary-color;}
+#content {
+     min-width: 20em; 
+     max-width: 30em; 
+     overflow: hidden;
+     margin-top:0px; 
+     margin-left:64px; 
+     margin-right:14px; 
+     margin-bottom:0px; 
+     max-width: none;
+     p{
+          font-family: $body-font; }	
+     em { 
+          color: $primary-color;}
+}
 
-#footer {margin-left:115px}
-#footer {background:$white; clear: both;}
-.navlist p{padding:4px 0;margin: 0; color: $primary-color; font-size:18px; font-family: $title-font; letter-spacing:4px}
-
+#footer {
+     margin-left:115px;
+     background:$white; 
+     clear: both;
+     .navlist p{
+          padding:4px 0;
+          margin: 0; 
+          color:$primary-color; 
+          font-size:18px; 
+          font-family:$title-font; 
+          letter-spacing:4px}
+}
 //wordpress entries-------------------------------------------------------------------------------
-.entry strong{font-family: $title-font; font-weight: bold; color: $primary-color;}
+.entry strong{ 
+     font-family: $title-font; 
+     font-weight: bold; 
+     color: $primary-color;
+}
 
-#arc {float: right; width:530px; overflow: hidden; margin-top:0px; margin-left:14px; margin-right:14px; margin-bottom:24px;}	
-.arc p{color:$white; font-family:  $title-font;  font-size: 12px; font-weight: normal !important;}
-.year th{color:$white; font-family:  $title-font;  font-size: 22px; font-weight: bold;}
-.arctitle {color:$white; font-family: $title-font;  font-size: 12px; font-weight: normal;}
-.arctitle th {color:$white; font-family:  $title-font;  font-size: 14px; font-weight: normal;}
-.arc2 {color:$white; font-family:  $title-font;  font-size: 12px; font-weight: normal !important;}
-.arc2 th {color:$white; font-family:  $title-font; font-size: 12px; font-weight: normal !important;}
+#arc {    
+     float: right; 
+     width:530px; 
+     overflow: hidden; 
+     margin-top:0px; 
+     margin-left:14px; 
+     margin-right:14px; 
+     margin-bottom:24px;
+}	
+
+@mixin arc-display($size,$weight){
+     color:$white; 
+     font-family:  $title-font;  
+     font-size: $size; 
+     font-weight: $weight;
+}
+.arc p{        @include arc-display(12px,normal !important); }
+.year th{      @include arc-display(22px,bold); }
+.arctitle {    @include arc-display(12px,normal); }
+.arctitle th { @include arc-display(14px,normal); }
+.arc2 {        @include arc-display(12px,normal !important);}
+.arc2 th {     @include arc-display(12px,normal !important); }
+
+
