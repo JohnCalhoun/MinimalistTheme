@@ -1,4 +1,4 @@
-<?php get_template_part('footer_navbgnklrullggtdudethegchgdl
+<?php get_template_part('footer_nav') ?>
 
 
 </div><!col-md-8 -->

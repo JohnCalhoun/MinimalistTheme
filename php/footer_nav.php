@@ -1,4 +1,4 @@
-<div class="col-md-6 col-md-offset-2">
+<div class="text-center">
 <?php wp_nav_menu( array(
                     'main_menu'=>'Main menu',
                     'depth'=>1,

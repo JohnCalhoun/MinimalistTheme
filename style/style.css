@@ -6068,6 +6068,7 @@ ol {
     color: #10B897; }
 
 #footer {
+  margin-left: 115px;
   background: #fff;
   clear: both; }
   #footer .navlist p {
