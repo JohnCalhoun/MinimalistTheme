@@ -1,4 +1,4 @@
-<div class="text-center">
+<div class="text-center" id="footer">
 <?php wp_nav_menu( array(
                     'main_menu'=>'Main menu',
                     'depth'=>1,

@@ -6056,7 +6056,8 @@ ol {
     color: #10B897; }
 
 #footer {
-  margin-left: 115px;
+  margin-left: 64px;
+  margin-right: 14px;
   background: #fff;
   clear: both; }
   #footer .navlist p {
@@ -6084,7 +6085,7 @@ ol {
 .arc p {
   color: #fff;
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: normal !important; }
 
 .year th {
@@ -6096,25 +6097,25 @@ ol {
 .arctitle {
   color: #fff;
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: normal; }
 
 .arctitle th {
   color: #fff;
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: normal; }
 
 .arc2 {
   color: #fff;
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: normal !important; }
 
 .arc2 th {
   color: #fff;
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: normal !important; }
 
 @font-face {
@@ -6124,7 +6125,7 @@ ol {
   font-weight: normal;
   font-style: normal; }
 .main_menu {
-  font-size: 12px; }
+  font-size: 20px; }
   .main_menu li {
     display: inline;
     text-transform: uppercase;
