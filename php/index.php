@@ -7,11 +7,12 @@
 <?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
-			<div class="post" id="post-<?php the_ID(); ?>">
+			<div class="post" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                    <h1 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> </h1>
                     <div class="entry">
-					<?php the_content('Read more &raquo;'); ?>
-				</div>
-				<?php the_tags(); ?>
+                         <?php the_excerpt(); ?>
+				     <?php the_tags(); ?>
+                    </div>
 			</div>
 		<?php endwhile; ?>
 		<div class="nav-previous alignleft"><?php previous_posts_link( 'Newer posts' ); ?></div>
