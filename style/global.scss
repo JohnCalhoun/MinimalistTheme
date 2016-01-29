@@ -6,14 +6,14 @@ body {
 	background: $white; 
 	font-family: $body-font;
      font-size: $body-size;
-	color: $black;
+	color: $body-color;
 	line-height: 30px;
 	margin-bottom: 0px;
 }
 
 @mixin Header($size)  {  
      font-family: $title-font; 
-     font-size: $size; color:$black; 
+     font-size: $size; color:$header-color; 
      font-weight:normal; 
      line-height: 1.1; 	
 }
@@ -45,7 +45,7 @@ img a{
      border:none;
 }
 blockquote{
-     border-left:1px solid $black; 
+     border-left:1px solid $border-color; 
      margin:0px; 
      padding:0 12px 0 12px;
 }
@@ -57,13 +57,13 @@ p{
 }
 
 a {
-     color: $grey;
+     color: $link-color;
      text-decoration: none;}
 a:link {
-     color: $grey; 
+     color: $link-color; 
      text-decoration: none;}
 a:visited {
-     color: $grey; 
+     color: $link-color; 
      text-decoration: none;}
 a:hover {
      color: $primary-color; 

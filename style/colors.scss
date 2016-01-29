@@ -1,6 +1,12 @@
 $primary-color: #10B897;
 $secondary-color: #FF7F50;
-$grey: #999999;
-$black: #808080;
-$dark: #303030; 
+
+$black: #303030; //darker grey
+$grey-dark: #808080; //black 
+$grey-light: #999999;
 $white: #fff;
+
+$body-color: $grey-dark;
+$header-color: $grey-dark;
+$border-color: $black;
+$link-color: $grey-light; 
