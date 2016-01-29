@@ -5939,64 +5939,53 @@ a img.aligncenter {
   font-style: normal; }
 body {
   background: #fff;
-  font: 20px Hoefler Text, bodyfont, serif;
+  font-family: Garamond, Georgia, "Times New Roman";
+  font-size: 20px;
   color: #808080;
   line-height: 30px;
   margin-bottom: 0px; }
 
 h1 {
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 50px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1;
-  font-weight: normal;
-  font-size: 35pt; }
+  line-height: 1.1; }
 
 h2 {
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 44px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1;
-  font-weight: normal;
-  font-size: 30pt; }
+  line-height: 1.1; }
 
 h3 {
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 38px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1;
-  font-weight: normal;
-  font-size: 24pt; }
+  line-height: 1.1; }
 
 h4 {
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 32px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1;
-  font-weight: normal;
-  font-size: 23pt; }
+  line-height: 1.1; }
 
 h5 {
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 26px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1;
-  font-weight: normal;
-  font-size: 21pt; }
+  line-height: 1.1; }
 
 h6 {
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 30pt;
+  font-size: 20px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1;
-  font-weight: normal;
-  font-size: 18pt; }
+  line-height: 1.1; }
 
 img {
   border: none; }
@@ -6036,8 +6025,7 @@ ul {
 li {
   line-height: 30px;
   padding: 6px 0 0 0;
-  font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 12pt; }
+  font-family: "altGothic3", Helvetica, sans-serif; }
 
 ol {
   padding: 0em 0em 0em 0em; }
@@ -6114,7 +6102,7 @@ ol {
 .arctitle th {
   color: #fff;
   font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: normal; }
 
 .arc2 {
@@ -6135,13 +6123,15 @@ ol {
   src: url("fonts/altgothicfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/altgothicfont-webfont.woff2") format("woff2"), url("fonts/altgothicfont-webfont.woff") format("woff"), url("fonts/altgothicfont-webfont.ttf") format("truetype"), url("fonts/altgothicfont-webfont.svg#alternategotno3dotregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.main_menu li {
-  display: inline;
-  text-transform: uppercase;
-  font-family: "altGothic3", Helvetica, sans-serif; }
-.main_menu li + li:before {
-  content: " || ";
-  color: #10B897; }
+.main_menu {
+  font-size: 12px; }
+  .main_menu li {
+    display: inline;
+    text-transform: uppercase;
+    font-family: "altGothic3", Helvetica, sans-serif; }
+  .main_menu li + li:before {
+    content: " || ";
+    color: #10B897; }
 
 code {
   font-family: "Roboto Mono", Helvetica, sans-serif;

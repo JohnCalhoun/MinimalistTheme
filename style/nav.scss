@@ -2,7 +2,8 @@
 @import "fonts";
 
 .main_menu {
-     
+     font-size: $nav-size;     
+ 
      li{  
           display: inline;
           text-transform: uppercase;

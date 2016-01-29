@@ -4,7 +4,8 @@
 //grobal styles----------------------------------------------------------------
 body {
 	background: $white; 
-	font: 20px Hoefler Text, bodyfont, serif;
+	font-family: $body-font;
+     font-size: $body-size;
 	color: $black;
 	line-height: 30px;
 	margin-bottom: 0px;
@@ -12,32 +13,30 @@ body {
 
 @mixin Header($size)  {  
      font-family: $title-font; 
-     font-size: 30pt; color:$black; 
+     font-size: $size; color:$black; 
      font-weight:normal; 
      line-height: 1.1; 	
-     font-weight: normal;
-     font-size: $size;
 }
 
 
 h1 {
-     @include Header(35pt);
+     @include Header($header-size-max);
      }
-h2 {
-     @include Header(30pt);
-     }
-h3 {
-     @include Header(24pt);
-     }
-h4 {
-     @include Header(23pt);
-     }
+h2 {    
+     @include Header($header-size-min+($header-size-max - $header-size-min)*(4/5));
+}
+h3 {    
+     @include Header($header-size-min+($header-size-max - $header-size-min)*(3/5));
+}
+h4 {    
+     @include Header($header-size-min+($header-size-max - $header-size-min)*(2/5));
+}
 h5 {
-     @include Header(21pt);
-     }
+     @include Header($header-size-min+($header-size-max - $header-size-min)*(1/5));
+}
 h6 {
-     @include Header(18pt);
-     }
+     @include Header($header-size-min);
+}
 
 img{ 
      border:none;
@@ -77,7 +76,6 @@ li {
      line-height: 30px; 
      padding: 6px 0 0 0; 
      font-family: $title-font; 
-     font-size: 12pt;
 }
 ol{  
      padding: 0em 0em 0em 0em;
@@ -151,11 +149,11 @@ ol{
      font-size: $size; 
      font-weight: $weight;
 }
-.arc p{        @include arc-display(12px,normal !important); }
+.arc p{        @include arc-display($nav-size,normal !important); }
 .year th{      @include arc-display(22px,bold); }
-.arctitle {    @include arc-display(12px,normal); }
-.arctitle th { @include arc-display(14px,normal); }
-.arc2 {        @include arc-display(12px,normal !important);}
-.arc2 th {     @include arc-display(12px,normal !important); }
+.arctitle {    @include arc-display($nav-size,normal); }
+.arctitle th { @include arc-display($nav-size,normal); }
+.arc2 {        @include arc-display($nav-size,normal !important);}
+.arc2 th {     @include arc-display($nav-size,normal !important); }
 
 
