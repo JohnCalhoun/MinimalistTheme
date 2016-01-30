@@ -19,7 +19,15 @@
 <div class="container-fluid">
 <div class="row">
 <div class="col-md-8 col-md-offset-2">
-<?php get_template_part('header_nav'); ?>
+
+<div class="hidden-xs hidden-sm">
+     <?php get_template_part('header_nav'); ?>
+</div>
+<div class="hidden-md hidden-lg text-center">
+     <?php get_template_part('header_nav'); ?>
+</div>
+<hr />
+
 
 
 

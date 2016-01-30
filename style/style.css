@@ -6047,6 +6047,11 @@ ol {
     content: " || ";
     color: #10B897; }
 
+.header-title {
+  color: #10B897; }
+  .header-title .page-title {
+    font-weight: bold; }
+
 code {
   font-family: "Roboto Mono", Helvetica, sans-serif;
   color: #FF7F50;
