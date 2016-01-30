@@ -7,12 +7,16 @@
 
 		<?php while (have_posts()) : the_post(); ?>
 			<div class="post" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-                    <h1 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> </h1>
-                    <div class="entry">
-                         <?php the_excerpt(); ?>
-				     <?php the_tags(); ?>
-                    </div>
-			</div>
+               <h1 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> </h1>
+               <div class="entry">
+                    <?php the_excerpt(); ?>
+               </div>
+               <div class="entry-meta">
+                    <p><a href="<?php echo get_permalink(); ?>">More</a><p>
+                    <p><?php the_tags('',':',''); ?></p>
+                    <p><?php the_category(':'); ?></p>
+          	</div>
+               </div>
 		<?php endwhile; ?>
 		<div class="nav-previous alignleft"><?php previous_posts_link( 'Newer posts' ); ?></div>
 		<div class="nav-next alignright"><?php next_posts_link( 'Older posts' ); ?></div>

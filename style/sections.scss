@@ -36,6 +36,13 @@
      }	
      em { 
           color: $primary-color;}
+     .post-title{}
+     .entry-meta {
+          p {
+               margin: 0px auto;
+          }
+     } 
+
 }
 
 #footer {
@@ -52,10 +59,12 @@
           letter-spacing:4px}
 }
 //wordpress entries-------------------------------------------------------------------------------
-.entry strong{ 
+.entry { 
+     strong{ 
      font-family: $title-font; 
      font-weight: bold; 
      color: $primary-color;
+     }
 }
 
 #arc {    
