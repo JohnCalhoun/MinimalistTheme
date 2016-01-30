@@ -3,7 +3,7 @@
 
 //grobal styles----------------------------------------------------------------
 body {
-	background: $white; 
+     background-color: $white; 
 	font-family: $body-font;
      font-size: $body-size;
 	color: $body-color;
@@ -12,7 +12,7 @@ body {
 }
 
 @mixin Header($size)  {  
-     font-family: $title-font; 
+     font-family: $header-font; 
      font-size: $size; color:$header-color; 
      font-weight:normal; 
      line-height: 1.1; 	
@@ -21,12 +21,15 @@ body {
 
 h1 {
      @include Header($header-size-max);
+     text-transform: uppercase; 
      }
 h2 {    
      @include Header($header-size-min+($header-size-max - $header-size-min)*(4/5));
+     text-transform: uppercase; 
 }
 h3 {    
      @include Header($header-size-min+($header-size-max - $header-size-min)*(3/5));
+     text-transform: uppercase; 
 }
 h4 {    
      @include Header($header-size-min+($header-size-max - $header-size-min)*(2/5));
@@ -45,6 +48,7 @@ img a{
      border:none;
 }
 blockquote{
+     font-family:$quote-font;
      border-left:1px solid $border-color; 
      margin:0px; 
      padding:0 12px 0 12px;
@@ -75,7 +79,6 @@ ul{
 li { 
      line-height: 30px; 
      padding: 6px 0 0 0; 
-     font-family: $title-font; 
 }
 ol{  
      padding: 0em 0em 0em 0em;

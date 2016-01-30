@@ -9,15 +9,56 @@
     font-weight: normal;
     font-style: normal;
 }
-
-
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@font-face{
+     font-family: 'accent';
+     src: url('fonts/accent.ttf') format('truetype')
+}
+@font-face{
+     font-family: 'journal';
+     src: url('fonts/JORNAL.TTF') format('truetype')
+}
+@font-face{
+     font-family: 'love';
+     src: url('fonts/Lovelt__.ttf') format('truetype')
+}
+@font-face{
+     font-family: 'moderne-sans';
+     src: url('fonts/MODERNE_SANS.ttf') format('truetype')
+}
+@font-face{
+     font-family: 'Monastic';
+     src: url('fonts/Monastic.ttf') format('truetype');
+}
+@font-face{
+     font-family: 'nevis';
+     src: url('fonts/nevis.ttf');
+}
+@font-face{
+     font-family: 'paranoid';
+     src: url('fonts/Paranoid.otf')
+}
+@font-face{
+     font-family: 'rometric';
+     src: url('fonts/ROMETRIC_Regular.ttf') format('truetype')
+}
+@font-face{
+     font-family: 'simplifica';
+     src: url('fonts/SIMPLIFICA.ttf') format('truetype')
+}
 
-$title-font:'altGothic3', Helvetica, sans-serif; 
+$backup-font: Helvetica, snas-serif; 
+$title-font:'altGothic3', $backup-font; 
 $body-font: Garamond, Georgia, "Times New Roman";
 $code-font: 'Roboto Mono',Helvetica,sans-serif; 
+$header-font:$title-font;
+$logo-font: $title-font, $backup-font;
+$comment-font:journal, $body-font;
+$quote-font: love, $body-font;
 
 $header-size-max: 50px;
-$header-size-min: 20px;
+$header-size-min: 30px;
 $body-size: 20px;
 $nav-size:20px;
+$comment-size: 30px;
+

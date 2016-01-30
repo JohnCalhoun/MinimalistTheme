@@ -1,3 +1,5 @@
+@import "colors";
+@import "fonts";
 .alignnone {
     margin: 5px 20px 20px 0;
 }
@@ -111,5 +113,15 @@ a img.aligncenter {
 }
 .bypostauthor {
 /*empty for now*/
+}
+
+.comment {
+     p {
+     font-family: $comment-font; 
+     font-size: $comment-size; 
+     }
+     blockquote {
+          font-family: $quote-font;
+     }   
 }
 

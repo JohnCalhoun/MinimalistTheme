@@ -27,7 +27,13 @@
      margin-bottom:0px; 
      max-width: none;
      p{
-          font-family: $body-font; }	
+          blockquote {
+               font-family: $quote-font;
+               p {
+                    font-family: $quote-font;
+               }
+          }     
+     }	
      em { 
           color: $primary-color;}
 }

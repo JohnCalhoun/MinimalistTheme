@@ -18,11 +18,12 @@
      color: $primary-color;
      .logo{
           text-transform: uppercase;
+          font-family: $logo-font; 
      }
      .page-title{
           font-weight: bold;
+          font-family: $title-font; 
      }
-
 }
 
 

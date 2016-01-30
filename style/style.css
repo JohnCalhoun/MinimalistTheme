@@ -22,6 +22,7 @@ Text Domain: mmn
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5826,6 +5827,39 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: 'altGothic3';
+  src: url("fonts/altgothicfont-webfont.eot");
+  src: url("fonts/altgothicfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/altgothicfont-webfont.woff2") format("woff2"), url("fonts/altgothicfont-webfont.woff") format("woff"), url("fonts/altgothicfont-webfont.ttf") format("truetype"), url("fonts/altgothicfont-webfont.svg#alternategotno3dotregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'accent';
+  src: url("fonts/accent.ttf") format("truetype"); }
+@font-face {
+  font-family: 'journal';
+  src: url("fonts/JORNAL.TTF") format("truetype"); }
+@font-face {
+  font-family: 'love';
+  src: url("fonts/Lovelt__.ttf") format("truetype"); }
+@font-face {
+  font-family: 'moderne-sans';
+  src: url("fonts/MODERNE_SANS.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Monastic';
+  src: url("fonts/Monastic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'nevis';
+  src: url("fonts/nevis.ttf"); }
+@font-face {
+  font-family: 'paranoid';
+  src: url("fonts/Paranoid.otf"); }
+@font-face {
+  font-family: 'rometric';
+  src: url("fonts/ROMETRIC_Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'simplifica';
+  src: url("fonts/SIMPLIFICA.ttf") format("truetype"); }
 .alignnone {
   margin: 5px 20px 20px 0; }
 
@@ -5926,6 +5960,12 @@ a img.aligncenter {
 .bypostauthor {
   /*empty for now*/ }
 
+.comment p {
+  font-family: journal, Garamond, Georgia, "Times New Roman";
+  font-size: 30px; }
+.comment blockquote {
+  font-family: love, Garamond, Georgia, "Times New Roman"; }
+
 @font-face {
   font-family: 'altGothic3';
   src: url("fonts/altgothicfont-webfont.eot");
@@ -5933,57 +5973,114 @@ a img.aligncenter {
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: 'accent';
+  src: url("fonts/accent.ttf") format("truetype"); }
+@font-face {
+  font-family: 'journal';
+  src: url("fonts/JORNAL.TTF") format("truetype"); }
+@font-face {
+  font-family: 'love';
+  src: url("fonts/Lovelt__.ttf") format("truetype"); }
+@font-face {
+  font-family: 'moderne-sans';
+  src: url("fonts/MODERNE_SANS.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Monastic';
+  src: url("fonts/Monastic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'nevis';
+  src: url("fonts/nevis.ttf"); }
+@font-face {
+  font-family: 'paranoid';
+  src: url("fonts/Paranoid.otf"); }
+@font-face {
+  font-family: 'rometric';
+  src: url("fonts/ROMETRIC_Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'simplifica';
+  src: url("fonts/SIMPLIFICA.ttf") format("truetype"); }
+@font-face {
   font-family: 'altGothic3';
   src: url("fonts/altgothicfont-webfont.eot");
   src: url("fonts/altgothicfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/altgothicfont-webfont.woff2") format("woff2"), url("fonts/altgothicfont-webfont.woff") format("woff"), url("fonts/altgothicfont-webfont.ttf") format("truetype"), url("fonts/altgothicfont-webfont.svg#alternategotno3dotregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'accent';
+  src: url("fonts/accent.ttf") format("truetype"); }
+@font-face {
+  font-family: 'journal';
+  src: url("fonts/JORNAL.TTF") format("truetype"); }
+@font-face {
+  font-family: 'love';
+  src: url("fonts/Lovelt__.ttf") format("truetype"); }
+@font-face {
+  font-family: 'moderne-sans';
+  src: url("fonts/MODERNE_SANS.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Monastic';
+  src: url("fonts/Monastic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'nevis';
+  src: url("fonts/nevis.ttf"); }
+@font-face {
+  font-family: 'paranoid';
+  src: url("fonts/Paranoid.otf"); }
+@font-face {
+  font-family: 'rometric';
+  src: url("fonts/ROMETRIC_Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'simplifica';
+  src: url("fonts/SIMPLIFICA.ttf") format("truetype"); }
 body {
-  background: #fff;
+  background-color: #fff;
   font-family: Garamond, Georgia, "Times New Roman";
   font-size: 20px;
-  color: #808080;
+  color: #606060;
   line-height: 30px;
   margin-bottom: 0px; }
 
 h1 {
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 50px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1; }
+  line-height: 1.1;
+  text-transform: uppercase; }
 
 h2 {
-  font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 44px;
+  font-family: "altGothic3", Helvetica, snas-serif;
+  font-size: 46px;
   color: #808080;
   font-weight: normal;
-  line-height: 1.1; }
+  line-height: 1.1;
+  text-transform: uppercase; }
 
 h3 {
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
+  font-size: 42px;
+  color: #808080;
+  font-weight: normal;
+  line-height: 1.1;
+  text-transform: uppercase; }
+
+h4 {
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 38px;
   color: #808080;
   font-weight: normal;
   line-height: 1.1; }
 
-h4 {
-  font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 32px;
-  color: #808080;
-  font-weight: normal;
-  line-height: 1.1; }
-
 h5 {
-  font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 26px;
+  font-family: "altGothic3", Helvetica, snas-serif;
+  font-size: 34px;
   color: #808080;
   font-weight: normal;
   line-height: 1.1; }
 
 h6 {
-  font-family: "altGothic3", Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: "altGothic3", Helvetica, snas-serif;
+  font-size: 30px;
   color: #808080;
   font-weight: normal;
   line-height: 1.1; }
@@ -5995,7 +6092,8 @@ img a {
   border: none; }
 
 blockquote {
-  border-left: 1px solid #303030;
+  font-family: love, Garamond, Georgia, "Times New Roman";
+  border-left: 1px solid #10B897;
   margin: 0px;
   padding: 0 12px 0 12px; }
 
@@ -6025,8 +6123,7 @@ ul {
 
 li {
   line-height: 30px;
-  padding: 6px 0 0 0;
-  font-family: "altGothic3", Helvetica, sans-serif; }
+  padding: 6px 0 0 0; }
 
 ol {
   padding: 0em 0em 0em 0em; }
@@ -6037,12 +6134,39 @@ ol {
   src: url("fonts/altgothicfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/altgothicfont-webfont.woff2") format("woff2"), url("fonts/altgothicfont-webfont.woff") format("woff"), url("fonts/altgothicfont-webfont.ttf") format("truetype"), url("fonts/altgothicfont-webfont.svg#alternategotno3dotregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'accent';
+  src: url("fonts/accent.ttf") format("truetype"); }
+@font-face {
+  font-family: 'journal';
+  src: url("fonts/JORNAL.TTF") format("truetype"); }
+@font-face {
+  font-family: 'love';
+  src: url("fonts/Lovelt__.ttf") format("truetype"); }
+@font-face {
+  font-family: 'moderne-sans';
+  src: url("fonts/MODERNE_SANS.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Monastic';
+  src: url("fonts/Monastic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'nevis';
+  src: url("fonts/nevis.ttf"); }
+@font-face {
+  font-family: 'paranoid';
+  src: url("fonts/Paranoid.otf"); }
+@font-face {
+  font-family: 'rometric';
+  src: url("fonts/ROMETRIC_Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'simplifica';
+  src: url("fonts/SIMPLIFICA.ttf") format("truetype"); }
 .main_menu {
   font-size: 20px; }
   .main_menu li {
     display: inline;
     text-transform: uppercase;
-    font-family: "altGothic3", Helvetica, sans-serif; }
+    font-family: "altGothic3", Helvetica, snas-serif; }
   .main_menu li + li:before {
     content: " || ";
     color: #10B897; }
@@ -6050,9 +6174,11 @@ ol {
 .header-title {
   color: #10B897; }
   .header-title .logo {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: "altGothic3", Helvetica, snas-serif, Helvetica, snas-serif; }
   .header-title .page-title {
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: "altGothic3", Helvetica, snas-serif; }
 
 code {
   font-family: "Roboto Mono", Helvetica, sans-serif;
@@ -6065,6 +6191,33 @@ code {
   src: url("fonts/altgothicfont-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/altgothicfont-webfont.woff2") format("woff2"), url("fonts/altgothicfont-webfont.woff") format("woff"), url("fonts/altgothicfont-webfont.ttf") format("truetype"), url("fonts/altgothicfont-webfont.svg#alternategotno3dotregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'accent';
+  src: url("fonts/accent.ttf") format("truetype"); }
+@font-face {
+  font-family: 'journal';
+  src: url("fonts/JORNAL.TTF") format("truetype"); }
+@font-face {
+  font-family: 'love';
+  src: url("fonts/Lovelt__.ttf") format("truetype"); }
+@font-face {
+  font-family: 'moderne-sans';
+  src: url("fonts/MODERNE_SANS.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Monastic';
+  src: url("fonts/Monastic.ttf") format("truetype"); }
+@font-face {
+  font-family: 'nevis';
+  src: url("fonts/nevis.ttf"); }
+@font-face {
+  font-family: 'paranoid';
+  src: url("fonts/Paranoid.otf"); }
+@font-face {
+  font-family: 'rometric';
+  src: url("fonts/ROMETRIC_Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'simplifica';
+  src: url("fonts/SIMPLIFICA.ttf") format("truetype"); }
 #resume-nav a:link {
   display: inline;
   color: #999999;
@@ -6085,8 +6238,10 @@ code {
   margin-right: 14px;
   margin-bottom: 0px;
   max-width: none; }
-  #content p {
-    font-family: Garamond, Georgia, "Times New Roman"; }
+  #content p blockquote {
+    font-family: love, Garamond, Georgia, "Times New Roman"; }
+    #content p blockquote p {
+      font-family: love, Garamond, Georgia, "Times New Roman"; }
   #content em {
     color: #10B897; }
 
@@ -6100,11 +6255,11 @@ code {
     margin: 0;
     color: #10B897;
     font-size: 18px;
-    font-family: "altGothic3", Helvetica, sans-serif;
+    font-family: "altGothic3", Helvetica, snas-serif;
     letter-spacing: 4px; }
 
 .entry strong {
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-weight: bold;
   color: #10B897; }
 
@@ -6119,37 +6274,37 @@ code {
 
 .arc p {
   color: #fff;
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 20px;
   font-weight: normal !important; }
 
 .year th {
   color: #fff;
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 22px;
   font-weight: bold; }
 
 .arctitle {
   color: #fff;
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 20px;
   font-weight: normal; }
 
 .arctitle th {
   color: #fff;
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 20px;
   font-weight: normal; }
 
 .arc2 {
   color: #fff;
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 20px;
   font-weight: normal !important; }
 
 .arc2 th {
   color: #fff;
-  font-family: "altGothic3", Helvetica, sans-serif;
+  font-family: "altGothic3", Helvetica, snas-serif;
   font-size: 20px;
   font-weight: normal !important; }
 
