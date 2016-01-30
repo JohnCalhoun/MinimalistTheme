@@ -12,7 +12,6 @@
                     <?php the_excerpt(); ?>
                </div>
                <div class="entry-meta">
-                    <p><a href="<?php echo get_permalink(); ?>">More</a><p>
                     <p><?php the_tags('',':',''); ?></p>
                     <p><?php the_category(':'); ?></p>
           	</div>
