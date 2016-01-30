@@ -6049,6 +6049,8 @@ ol {
 
 .header-title {
   color: #10B897; }
+  .header-title .logo {
+    text-transform: uppercase; }
   .header-title .page-title {
     font-weight: bold; }
 

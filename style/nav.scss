@@ -16,7 +16,9 @@
 }
 .header-title{
      color: $primary-color;
-     //.logo{}
+     .logo{
+          text-transform: uppercase;
+     }
      .page-title{
           font-weight: bold;
      }
