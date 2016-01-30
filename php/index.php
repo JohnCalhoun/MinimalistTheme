@@ -3,7 +3,6 @@
 	<div id="content">
 	<div class="row">
 	<div class="col-md-8">
-     <?php get_template_part('header_nav'); ?>
 <?php if (have_posts()) : ?>
 
 		<?php while (have_posts()) : the_post(); ?>
