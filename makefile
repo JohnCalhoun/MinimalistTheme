@@ -20,7 +20,7 @@ upload:staging
 test:staging
 	./upload_dev.sh
 package:staging
-	zip -r mnn.zip staging
+	cp -r ./staging/* ./mmn && zip -r mmn.zip mmn
 
 push:
 	git push -u origin master

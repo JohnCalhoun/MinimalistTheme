@@ -5,12 +5,11 @@ Theme URI:
 Author: John Calhoun
 Author URI: johnmcalhoun.com
 Description: A minimalist theme.
-Version: 0.0
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: 
 Text Domain: mmn
-
 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
@@ -6162,7 +6161,7 @@ ol {
   font-family: 'simplifica';
   src: url("fonts/SIMPLIFICA.ttf") format("truetype"); }
 .main_menu {
-  font-size: 20px; }
+  font-size: 25px; }
   .main_menu li {
     display: inline;
     text-transform: uppercase;
@@ -6277,7 +6276,7 @@ code {
 .arc p {
   color: #fff;
   font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal !important; }
 
 .year th {
@@ -6289,25 +6288,25 @@ code {
 .arctitle {
   color: #fff;
   font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal; }
 
 .arctitle th {
   color: #fff;
   font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal; }
 
 .arc2 {
   color: #fff;
   font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal !important; }
 
 .arc2 th {
   color: #fff;
   font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal !important; }
 
 /*# sourceMappingURL=style.css.map */
