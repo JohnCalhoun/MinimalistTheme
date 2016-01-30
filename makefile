@@ -1,4 +1,4 @@
-.PHONY: clear style asset php staging
+.PHONY: clear style asset php staging snapshot
 
 clear: 
 	rm -r ./staging/*
@@ -6,14 +6,15 @@ clear:
 style: ./style/*
 	cd ./style && make style.css && cp style.css ../staging
 
+
 asset: ./assets/*
-	cp -r ./assets/* ./staging
+	cd ./assets && make all && cd .. && cp -r ./assets/* ./staging
 
 php: ./php/*
 	cp -r ./php/* ./staging
 
 staging:style asset php
-	
+
 upload:staging
 	./upload.sh
 test:staging
