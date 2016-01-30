@@ -14,7 +14,6 @@ if ( post_password_required() ) {
 			?>
 		</h2>
 
-		<?php twentyfifteen_comment_nav(); ?>
 
 		<ol class="comment-list">
 			<?php
@@ -26,7 +25,6 @@ if ( post_password_required() ) {
 			?>
 		</ol><!-- .comment-list -->
 
-		<?php twentyfifteen_comment_nav(); ?>
 
 	<?php endif; // have_comments() ?>
 
@@ -36,6 +34,12 @@ if ( post_password_required() ) {
 	?>
 		<p class="no-comments"><?php _e( 'Comments are closed.', 'twentyfifteen' ); ?></p>
 	<?php endif; ?>
+
+
+     <?php if (function_exists('curPageURL')) { ?>
+     <input type="hidden" name="redirect_to" value="<?php echo curPageURL() ?>" />
+     <?php } ?>
+
 
 	<?php comment_form(); ?>
 
