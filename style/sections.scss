@@ -79,27 +79,26 @@
      }
 }
 
-#arc {    
-     float: right; 
-     width:530px; 
-     overflow: hidden; 
+#post_nav {    
      margin-top:0px; 
      margin-left:14px; 
      margin-right:14px; 
      margin-bottom:24px;
-}	
+     max-width: 150px;	
 
-@mixin arc-display($size,$weight){
-     color:$black; 
-     font-family:  $title-font;  
-     font-size: $size; 
-     font-weight: $weight;
+     @mixin arc-display($size,$weight){
+          color:$black; 
+          font-family:  $title-font;  
+          font-size: $size; 
+          font-weight: $weight;
+          text-align: center;
+     }
+     .year {       @include arc-display($nav-size,normal !important); }
+     .month {      @include arc-display($nav-size,normal !important); }
+     .day {        @include arc-display($nav-size,normal !important); }
+     .title {
+          font-family: $body-font;
+     }
+
 }
-.arc p{        @include arc-display($nav-size,normal !important); }
-.year th{      @include arc-display(22px,bold); }
-.arctitle {    @include arc-display($nav-size,normal); }
-.arctitle th { @include arc-display($nav-size,normal); }
-.arc2 {        @include arc-display($nav-size,normal !important);}
-.arc2 th {     @include arc-display($nav-size,normal !important); }
-
 

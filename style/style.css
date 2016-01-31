@@ -6270,49 +6270,31 @@ code {
   font-weight: bold;
   color: #10B897; }
 
-#arc {
-  float: right;
-  width: 530px;
-  overflow: hidden;
+#post_nav {
   margin-top: 0px;
   margin-left: 14px;
   margin-right: 14px;
-  margin-bottom: 24px; }
-
-.arc p {
-  color: #606060;
-  font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 25px;
-  font-weight: normal !important; }
-
-.year th {
-  color: #606060;
-  font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 22px;
-  font-weight: bold; }
-
-.arctitle {
-  color: #606060;
-  font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 25px;
-  font-weight: normal; }
-
-.arctitle th {
-  color: #606060;
-  font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 25px;
-  font-weight: normal; }
-
-.arc2 {
-  color: #606060;
-  font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 25px;
-  font-weight: normal !important; }
-
-.arc2 th {
-  color: #606060;
-  font-family: "altGothic3", Helvetica, snas-serif;
-  font-size: 25px;
-  font-weight: normal !important; }
+  margin-bottom: 24px;
+  max-width: 150px; }
+  #post_nav .year {
+    color: #606060;
+    font-family: "altGothic3", Helvetica, snas-serif;
+    font-size: 25px;
+    font-weight: normal !important;
+    text-align: center; }
+  #post_nav .month {
+    color: #606060;
+    font-family: "altGothic3", Helvetica, snas-serif;
+    font-size: 25px;
+    font-weight: normal !important;
+    text-align: center; }
+  #post_nav .day {
+    color: #606060;
+    font-family: "altGothic3", Helvetica, snas-serif;
+    font-size: 25px;
+    font-weight: normal !important;
+    text-align: center; }
+  #post_nav .title {
+    font-family: Garamond, Georgia, "Times New Roman"; }
 
 /*# sourceMappingURL=style.css.map */
