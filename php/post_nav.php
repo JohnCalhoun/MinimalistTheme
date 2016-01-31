@@ -34,7 +34,7 @@ if ($arcresults) {
     }
 ?>
 <div class="day"><?php echo $arcresult->dayofmonth; ?></div>
-<div class="title"><span id=p<?php echo $arcresult->ID; ?>><a href="<?php echo get_permalink($arcresult->ID); ?>"><?php echo strip_tags(apply_filters('the_title', $arcresult->post_title)); ?></span></div>
+<div class="title"><span id=p<?php echo $arcresult->ID; ?>><a href="<?php echo get_permalink($arcresult->ID); ?>"><?php echo strip_tags(apply_filters('the_title', $arcresult->post_title)); ?></a></span></div>
 <?php
   }
 }
