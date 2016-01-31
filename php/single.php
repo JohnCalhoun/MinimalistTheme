@@ -10,6 +10,7 @@
                <a href="<?php the_permalink(); ?>" rel="bookmark">Return to Post</a>
                <?php comments_template(); ?>
           <?php else :?>
+               <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 			<?php the_content('<p>Read the rest of this entry &raquo;</p>'); ?>
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
                <a href="?show=comments">Comments</a>
