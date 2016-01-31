@@ -1,8 +1,20 @@
 <?php get_header(); ?>
 
 	<div id="content">
-
-		<div class="post" id="post-<?php the_ID(); ?>">
+     <div class="row">
+         <div class="col-md-12">
+               <?php wp_nav_menu( array(
+                    'main_class'=>'sub_menu',
+                    'depth'=>1,
+                    'menu'=>'front_menu',
+                    'fallback_cb'=>FALSE,
+                    'theme_location'=>'front_subheader'
+                    )); ?>
+         </div>
+     </div>
+     <div class="row">
+     <div class="col-md-12">
+	<div class="post" id="post-<?php the_ID(); ?>">
 			<div class="entry">
 
           <p><?php bloginfo( 'description' ); ?></p>
@@ -18,6 +30,5 @@
 		<?php endwhile; endif; ?>
 	<small><?php edit_post_link('Edit', '<p>', '</p>'); ?></small>
 	</div>
-
-
+     </div>
 <?php get_footer(); ?>

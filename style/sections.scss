@@ -54,6 +54,9 @@
      .nav-previous{
           @extend .nav-pagination-post;     
      }
+     .row {
+          margin: 0 0 0 0; 
+     }
 }
 
 #footer {

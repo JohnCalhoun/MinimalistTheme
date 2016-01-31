@@ -7,7 +7,12 @@
      add_theme_support( 'custom-header' );
      //nav menus
      register_nav_menus( array(
-                         'main_menu'=>'Main menu in header and footer'
+                         'main_menu'=>'Main menu in header and footer',
+                         'single_subheader'=>'Menu for Single post pages',
+                         'page_subheader'=>'Menu for the pages',
+                         'archives_subheader'=>'Menu for the archives pages',
+                         'index_subheader'=>'Menu for the index pages',
+                         'front_subheader'=>'Menu for the front page'
                          )); 
      if ( ! isset( $content_width ) ) {
           $content_width = 600;

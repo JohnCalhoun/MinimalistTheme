@@ -4,7 +4,8 @@
                     'depth'=>1,
                     'menu_class'=>'main_menu',
                     'before'=>'',
-                    'after'=> ''
+                    'after'=> '',
+                    'theme_location'=>'main_menu'
                )); ?> 
 </div>
 </div>

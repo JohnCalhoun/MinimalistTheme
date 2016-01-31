@@ -21,6 +21,26 @@
           color: $primary-color;
      } 
 }
+.main_menu {
+     font-size: $nav-size - 5px;     
+     padding: 0px 0px 0px 0px;
+     ul {
+          padding: 0px 0px 0px 0px;
+     }
+     ol{
+          padding:0px 0px 0px 0px;
+     } 
+     li{  
+          display: inline;
+          text-transform: uppercase;
+          font-family: $title-font;
+          padding:0px 0px 0px 0px;
+     }
+     li+li:before{
+          content:" | ";
+          color: $primary-color;
+     } 
+}
 .header-title{
      color: $primary-color;
      .logo{

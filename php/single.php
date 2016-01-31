@@ -2,6 +2,17 @@
 
 	<div id="content">
      <div class="row">
+         <div class="col-md-12">
+               <?php wp_nav_menu( array(
+                    'main_class'=>'sub_menu',
+                    'depth'=>1,
+                    'menu'=>'single_menu',
+                    'fallback_cb'=>FALSE,
+                    'theme_location'=>'single_subheader'
+                    )); ?>
+         </div>
+     </div>
+     <div class="row">
      <div class="col-md-8">
 
 		<div class="post" id="post-<?php the_ID(); ?>">

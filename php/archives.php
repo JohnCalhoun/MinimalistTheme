@@ -4,8 +4,20 @@ Template Name: Archives
 */
 get_header(); ?>
 
-	<div id="content">
-	<div class="row">
+	<div id="content">	
+     <div class="row">
+         <div class="col-md-12">
+               <?php wp_nav_menu( array(
+                    'main_class'=>'sub_menu',
+                    'depth'=>1,
+                    'menu'=>'archives_menu',
+                    'fallback_cb'=>FALSE,
+                    'theme_location'=>'archives_subheader'
+                    )); ?>
+         </div>
+     </div>
+     <div class="row">
+     <div class="row">
 	<div class="col-md-8">
 <?php if (have_posts()) : ?>
           <?php the_post(); ?>
