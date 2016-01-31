@@ -80,27 +80,7 @@
      color: $primary-color;
      }
 }
-
-#post_nav {    
-     margin-top:0px; 
-     margin-left:14px; 
-     margin-right:14px; 
-     margin-bottom:24px;
-     max-width: 150px;	
-
-     @mixin arc-display($size,$weight){
-          color:$black; 
-          font-family:  $title-font;  
-          font-size: $size; 
-          font-weight: $weight;
-          text-align: center;
-     }
-     .year {       @include arc-display($nav-size,normal !important); }
-     .month {      @include arc-display($nav-size,normal !important); }
-     .day {        @include arc-display($nav-size,normal !important); }
-     .title {
-          font-family: $body-font;
-     }
-
+.sticky {
+     border: 4px solid $black; 
+     padding: 10px 10px 10px 10px;
 }
-
