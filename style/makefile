@@ -1,8 +1,8 @@
 
-style.css: ./*scss
-	sass main.scss style.css
+style.raw.css: ./*scss
+	sass main.scss style.raw.css
 
-style.min.css: style.css
-	yuicompressor -o style.min.css --nomunge --type css style.css && rm style.css
+style.css: style.raw.css
+	yuicompressor -o style.css --nomunge --type css style.raw.css && rm style.raw.css
 
-all: style.min.css
+all: style.css

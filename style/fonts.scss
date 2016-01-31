@@ -11,40 +11,12 @@
 }
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 @font-face{
-     font-family: 'accent';
-     src: url('fonts/accent.ttf') format('truetype')
-}
-@font-face{
      font-family: 'journal';
      src: url('fonts/JORNAL.TTF') format('truetype')
 }
 @font-face{
      font-family: 'love';
      src: url('fonts/Lovelt__.ttf') format('truetype')
-}
-@font-face{
-     font-family: 'moderne-sans';
-     src: url('fonts/MODERNE_SANS.ttf') format('truetype')
-}
-@font-face{
-     font-family: 'Monastic';
-     src: url('fonts/Monastic.ttf') format('truetype');
-}
-@font-face{
-     font-family: 'nevis';
-     src: url('fonts/nevis.ttf');
-}
-@font-face{
-     font-family: 'paranoid';
-     src: url('fonts/Paranoid.otf')
-}
-@font-face{
-     font-family: 'rometric';
-     src: url('fonts/ROMETRIC_Regular.ttf') format('truetype')
-}
-@font-face{
-     font-family: 'simplifica';
-     src: url('fonts/SIMPLIFICA.ttf') format('truetype')
 }
 
 $backup-font: Helvetica, snas-serif; 
