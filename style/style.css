@@ -6242,8 +6242,10 @@ code {
       font-family: love, Garamond, Georgia, "Times New Roman"; }
   #content em {
     color: #10B897; }
-  #content .entry-meta p {
-    margin: 0px auto; }
+  #content .entry-meta {
+    word-break: break-all; }
+    #content .entry-meta p {
+      margin: 0px auto; }
 
 #footer {
   margin-left: 64px;

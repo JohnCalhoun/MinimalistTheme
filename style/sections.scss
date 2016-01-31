@@ -38,6 +38,7 @@
           color: $primary-color;}
      .post-title{}
      .entry-meta {
+          word-break: break-all;
           p {
                margin: 0px auto;
           }
