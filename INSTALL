@@ -1,0 +1,10 @@
+##Make commands
+####staging
+     the make file in assets uses CutyCapt to generate a screenshot automatically. you will need to change the details of this to your own site. 
+     builds everything into the staging directory
+####upload
+     runs upload script to upload staging to server. user must define their own upload script
+####package
+     zips staging into a zip file that can be install into wordpress
+
+
