@@ -9,6 +9,7 @@
 			<div class="post" <?php post_class(); ?> id="post-<?php the_ID(); ?>">
                <h1 class="post-title"><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a> </h1>
                <div class="entry">
+                    <?php the_post_thumbnail(); ?>
                     <?php the_excerpt(); ?>
                </div>
                <div class="entry-meta">
