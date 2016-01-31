@@ -5,6 +5,13 @@
      add_theme_support( 'title-tag' );     
      add_theme_support( 'custom-background' );
      add_theme_support( 'custom-header' );
+     add_theme_support( 'html5', array( 'search-form',
+                                        'comment-list',
+                                        'comment-form',
+                                        'search-from',
+                                        'gallery',
+                                        'caption'
+                                   ) ); 
      //nav menus
      register_nav_menus( array(
                          'main_menu'=>'Main menu in header and footer',
