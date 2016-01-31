@@ -4,7 +4,7 @@
      <div class="row">
          <div class="col-md-12">
                <?php wp_nav_menu( array(
-                    'main_class'=>'sub_menu',
+                    'menu_class'=>'sub_menu',
                     'depth'=>1,
                     'menu'=>'index_menu',
                     'fallback_cb'=>FALSE,
@@ -41,10 +41,22 @@
 
 
 	</div>
-<div class="col-md-4 hidden-xs hidden-sm">
-     <?php get_sidebar('index'); ?>
-</div>
-</div>
-</div>
+     <div class="col-md-4 hidden-xs hidden-sm">
+          <?php get_sidebar('index'); ?>
+     </div>
+     </div>
+     <div class="row">
+         <div class="col-md-12">
+               <?php wp_nav_menu( array(
+                    'menu_class'=>'sub_menu',
+                    'depth'=>1,
+                    'menu'=>'index_footer',
+                    'fallback_cb'=>FALSE,
+                    'theme_location'=>'index_subfooter'
+                    )); ?>
+         </div>
+     </div>
+
+     </div>
 
 <?php get_footer(); ?>

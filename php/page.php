@@ -3,7 +3,7 @@
      <div class="row">
          <div class="col-md-12">
                <?php wp_nav_menu( array(
-                    'main_class'=>'sub_menu',
+                    'menu_class'=>'sub_menu',
                     'depth'=>1,
                     'menu'=>'page_menu',
                     'fallback_cb'=>FALSE,
@@ -11,7 +11,6 @@
                     )); ?>
          </div>
      </div>
-     <div class="row">
      <div class="row">
      <div class="col-md-8">
 
@@ -33,6 +32,17 @@
      <div class="col-md-4 hidden-xs hidden-sm">
           <?php get_sidebar('page'); ?>
      </div>
+     </div>
+     <div class="row">
+         <div class="col-md-12">
+               <?php wp_nav_menu( array(
+                    'menu_class'=>'sub_menu',
+                    'depth'=>1,
+                    'menu'=>'page_footer',
+                    'fallback_cb'=>FALSE,
+                    'theme_location'=>'page_subfooter'
+                    )); ?>
+         </div>
      </div>
      </div>
 <?php get_footer(); ?>

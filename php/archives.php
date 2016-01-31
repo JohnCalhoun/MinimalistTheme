@@ -8,7 +8,7 @@ get_header(); ?>
      <div class="row">
          <div class="col-md-12">
                <?php wp_nav_menu( array(
-                    'main_class'=>'sub_menu',
+                    'menu_class'=>'sub_menu',
                     'depth'=>1,
                     'menu'=>'archives_menu',
                     'fallback_cb'=>FALSE,
@@ -45,10 +45,22 @@ get_header(); ?>
 <?php endif; ?>
 
 	</div>
-<div class="col-md-4 hidden-xs hidden-sm">
-     <?php get_sidebar('archive'); ?>
-</div>
-</div>
-</div>
+     <div class="col-md-4 hidden-xs hidden-sm">
+          <?php get_sidebar('archive'); ?>
+     </div>
+     </div>
+     <div class="row">
+         <div class="col-md-12">
+               <?php wp_nav_menu( array(
+                    'menu_class'=>'sub_menu',
+                    'depth'=>1,
+                    'menu'=>'archive_footer',
+                    'fallback_cb'=>FALSE,
+                    'theme_location'=>'archive_subfooter'
+                    )); ?>
+         </div>
+     </div>
+
+     </div>
 
 <?php get_footer(); ?>
