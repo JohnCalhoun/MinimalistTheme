@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
 	<div id="content">
+     <div class="row">
+     <div class="col-md-8">
 
 		<div class="post" id="post-<?php the_ID(); ?>">
 
@@ -23,7 +25,10 @@
 		<p>Sorry, no posts matched your criteria.</p>
      <?php endif; ?>
 	<small><?php edit_post_link('Leo edit link', '<p>', '</p>'); ?></small>
-
 	</div>
-	
+     <div class="col-md-4 hidden-xs hidden-sm">
+          <?php get_sidebar('single'); ?>
+     </div>
+     </div>
+     </div>
 <?php get_footer(); ?>

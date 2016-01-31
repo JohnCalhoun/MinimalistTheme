@@ -1,6 +1,7 @@
 <?php get_header(); ?>
-
 	<div id="content">
+     <div class="row">
+     <div class="col-md-8">
 
 		<div class="post" id="post-<?php the_ID(); ?>">
 			<div class="entry">
@@ -17,6 +18,9 @@
 		<?php endwhile; endif; ?>
 	<small><?php edit_post_link('Edit', '<p>', '</p>'); ?></small>
 	</div>
-
-
+     <div class="col-md-4 hidden-xs hidden-sm">
+          <?php get_sidebar('page'); ?>
+     </div>
+     </div>
+     </div>
 <?php get_footer(); ?>
