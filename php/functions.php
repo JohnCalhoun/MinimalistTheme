@@ -25,7 +25,7 @@
           }
           return $pageURL;
      }
-
+     //edit except read more
      function new_excerpt_more($more) {
           global $post;
           return '<a class="moretag" href="'. get_permalink($post->ID) . '"> More...</a>';
@@ -36,4 +36,22 @@
           add_editor_style( 'editor-style.css' );
      }
      add_action( 'admin_init', 'my_theme_add_editor_styles' ); 
+     add_action( 'widgets_init', 'my_register_sidebars' );
+
+     function my_register_sidebars() {
+          /* Register the 'primary' sidebar. */
+          register_sidebar(
+               array(
+                    'id' => 'index-sidebar',
+                    'name' => ( 'Index Sidebar' ),
+                    'description' => ( 'Sidebar for the Index page' ),
+                    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                    'after_widget' => '</div>',
+                    'before_title' => '<h3 class="widget-title">',
+                    'after_title' => '</h3>'
+               )
+          );
+     /* Repeat register_sidebar() code for additional sidebars. */
+     }
+     global $wp_locale; 
 ?>
