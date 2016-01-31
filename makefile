@@ -4,8 +4,7 @@ clear:
 	rm -r ./staging/*
 
 style: ./style/*
-	cd ./style && make style.css && cp *.css ../staging
-
+	cd ./style && make all && cp *.css ../staging
 
 asset: ./assets/*
 	cd ./assets && make all && cd .. && cp -r ./assets/* ./staging
