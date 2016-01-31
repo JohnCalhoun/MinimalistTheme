@@ -14,7 +14,7 @@ if ( post_password_required() ) {
 			?>
 		</h2>
 
-
+          <?php paginate_comments_links(); ?>
 		<ol class="comment-list">
 			<?php
 				wp_list_comments( array(
@@ -24,7 +24,7 @@ if ( post_password_required() ) {
 				) );
 			?>
 		</ol><!-- .comment-list -->
-
+          <?php paginate_comments_links(); ?>
 
 	<?php endif; // have_comments() ?>
 
