@@ -12,16 +12,7 @@
                     <?php the_post_thumbnail(); ?>
                     <?php the_excerpt(); ?>
                </div>
-               <div class="entry-meta">
-                    <div class="row">
-                    <div class="col-xs-6 text-left">
-                         <p><?php the_tags('',':',''); ?></p>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                         <p><?php the_category(':'); ?></p>
-                    </div>
-                    </div>
-          	</div>
+               <?php get_template_part('tag-cat'); ?> 
                </div>
 		<?php endwhile; ?>
 		<div class="nav-previous alignleft"><?php previous_posts_link( 'Newer posts' ); ?></div>
