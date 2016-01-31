@@ -6246,6 +6246,10 @@ code {
     word-break: break-all; }
     #content .entry-meta p {
       margin: 0px auto; }
+  #content .nav-pagination-post, #content .nav-next, #content .nav-previous {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "altGothic3", Helvetica, snas-serif; }
 
 #footer {
   margin-left: 64px;
