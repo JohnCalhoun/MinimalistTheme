@@ -11,4 +11,4 @@
           'after'=> '',
           'theme_location'=>'main_menu'
           )); ?>
-
+<hr />

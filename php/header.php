@@ -21,7 +21,6 @@
 <div class="hidden-md hidden-lg text-center">
      <?php get_template_part('header_nav'); ?>
 </div>
-<hr />
 
 
 

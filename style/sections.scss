@@ -2,6 +2,7 @@
 @import 'fonts';
 //section styles-------------------------------------------------------------------
 #resume-nav {
+     font-family:$title-font;
      a:link {  
           display: inline; 
           color: $link-color; 
@@ -16,12 +17,16 @@
           text-decoration: none;
      }
 }
-
+#container{
+     margin-top:50px;
+}
+.home #container{
+     margin-top:100px;
+}
 #content {
      min-width: 20em; 
      max-width: 30em; 
      overflow: hidden;
-     margin-top:0px; 
      margin-left:0px; 
      margin-right:0px; 
      margin-bottom:0px; 
