@@ -17,8 +17,13 @@
           text-decoration: none;
      }
 }
+#performance-nav {
+     @extend #resume-nav;
+}
+
 #container{
      margin-top:50px;
+     margin-bottom:100px;
 }
 .home #container{
      margin-top:100px;
@@ -64,10 +69,15 @@
      }
 }
 
+.front-page {
+     p {
+          max-width: 800px; 
+          margin:30px 0px 30px 0px;
+     }
+}
 #footer {
-     margin-left:64px;
+     margin-left:0px;
      margin-right:14px;
-     background:$white; 
      clear: both;
      .navlist p{
           padding:4px 0;

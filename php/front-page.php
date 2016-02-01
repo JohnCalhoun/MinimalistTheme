@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="content">
+	<div id="content" class="front-page">
      <div class="row">
          <div class="col-md-12">
                <?php wp_nav_menu( array(

@@ -15,6 +15,8 @@ php: ./php/*
 staging:style asset php
 
 upload:staging
+	./upload_dev.sh
+upload-main:staging
 	./upload.sh
 test:staging
 	./upload_dev.sh
