@@ -30,17 +30,5 @@
 		<?php endwhile; endif; ?>
 	<small><?php edit_post_link('Edit', '<p>', '</p>'); ?></small>
 	</div>
-     <div class="row">
-         <div class="col-md-12">
-               <?php wp_nav_menu( array(
-                    'menu_class'=>'sub_menu',
-                    'depth'=>1,
-                    'menu'=>'front_footer',
-                    'fallback_cb'=>FALSE,
-                    'theme_location'=>'front_subfooter'
-                    )); ?>
-         </div>
-     </div>
-
      </div>
 <?php get_footer(); ?>

@@ -3,6 +3,7 @@
 
 .main_menu {
      font-size: $nav-size;     
+     line-height: 50px;
      padding: 0px 0px 0px 0px;
      ul {
           padding: 0px 0px 0px 0px;
@@ -22,7 +23,8 @@
      } 
 }
 .sub_menu {
-     font-size: $nav-size - 5px;     
+     font-size: $sub-nav-size;     
+     line-height: 50px;
      padding: 0px 0px 0px 0px;
      ul {
           padding: 0px 0px 0px 0px;
@@ -32,7 +34,6 @@
      } 
      li{  
           display: inline;
-          text-transform: uppercase;
           font-family: $title-font;
           padding:0px 0px 0px 0px;
      }
@@ -43,12 +44,13 @@
 }
 .header-title{
      color: $primary-color;
+     font-size:$logo-size; 
      .logo{
           text-transform: uppercase;
           font-family: $logo-font; 
+          font-weight:bold;
      }
      .page-title{
-          font-weight: bold;
           font-family: $title-font; 
      }
 }

@@ -10,13 +10,6 @@ body {
 	line-height: 30px;
 	margin-bottom: 0px;
 }
-
-@mixin Header($size)  {  
-     font-family: $header-font; 
-     font-size: $size; color:$header-color; 
-     font-weight:normal; 
-     line-height: 1.1; 	
-}
 hr{
      border:0 0 0 0;
      height: 1px;
@@ -34,7 +27,13 @@ hr{
                $black,
                rgba(0,0,0,0));
 }
-
+@mixin Header($size)  {  
+     font-family: $header-font; 
+     font-size: $size; 
+     color:$header-color; 
+     font-weight:normal; 
+     line-height: 1.1; 	
+}
 h1 {
      @include Header($header-size-max);
      text-transform: uppercase; 

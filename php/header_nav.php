@@ -2,7 +2,7 @@
      <img alt="" src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" />
 <?php endif ?>
  
-<h2 class="header-title"><a class="logo" href="<?php echo get_home_url(); ?>" ><?php bloginfo('name'); ?></a>| <a class="page-title" href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
+<h2 class="header-title"><a class="logo" href="<?php echo get_home_url(); ?>" ><?php bloginfo('name'); ?></a>| <a class="page-title" href="<?php the_permalink() ?>"><?php echo wp_title(""); ?></a></h2>
 <?php wp_nav_menu( array(     
           'menu'=>'main_menu',
           'depth'=>1,
