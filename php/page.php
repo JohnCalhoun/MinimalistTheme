@@ -34,6 +34,11 @@
      </div>
      </div>
      <div class="row">
+		<div class="col-md-12">
+			 <?php get_sidebar('pageFooter'); ?>
+		</div>
+     </div>
+     <div class="row">
          <div class="col-md-12">
                <?php wp_nav_menu( array(
                     'menu_class'=>'sub_menu',
@@ -44,10 +49,5 @@
                     )); ?>
          </div>
      </div>
-     </div>
-     <div class="row">
-		<div class="col-md-12">
-			 <?php get_sidebar('pageFooter'); ?>
-		</div>
      </div>
 <?php get_footer(); ?>

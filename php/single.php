@@ -41,6 +41,9 @@
           <?php get_sidebar('single'); ?>
      </div>
      </div>
+	<div class="row">
+		<?php get_sidebar('singleFooter'); ?>
+	</div>
      <div class="row">
          <div class="col-md-12">
                <?php wp_nav_menu( array(

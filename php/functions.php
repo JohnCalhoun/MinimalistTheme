@@ -104,6 +104,17 @@
           );
           register_sidebar(
                array(
+                    'id' => 'Single-sidebarFooter',
+                    'name' => ( 'Single SidebarFooter' ),
+                    'description' => ( 'Sidebar footer for the Single post pages' ),
+                    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+                    'after_widget' => '</div>',
+                    'before_title' => '<h3 class="widget-title">',
+                    'after_title' => '</h3>'
+               )
+          );
+          register_sidebar(
+               array(
                     'id' => 'archive-sidebar',
                     'name' => ( 'Archive Sidebar' ),
                     'description' => ( 'Sidebar for the Archive pages' ),
